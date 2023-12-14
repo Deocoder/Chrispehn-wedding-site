@@ -22,6 +22,16 @@ p {
   font-size: 18px;
 }
 
+.pad {
+  padding: 40px 80px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 button {
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -29,16 +39,16 @@ button {
   outline: none;
   font-size: 18px;
   border-radius: 3px;
-  border:none;
+  border: none;
 }
 
 :root {
   --secondary-color: #ffd400;
 }
 
-.container {
+/* .container {
   padding: 40px 80px;
-}
+} */
 
 img {
   width: 100%;
@@ -66,7 +76,8 @@ nav ul li a:hover {
 
 /* Intro Section */
 .intro {
-  margin-top: 10%;
+  margin-top: 5%;
+  position: relative;
 }
 
 .intro h1 {
@@ -79,6 +90,7 @@ nav ul li a:hover {
 .intro-img {
   width: 50%;
   height: 500px;
+  z-index: -1;
 }
 
 .intro-img img {
@@ -95,9 +107,198 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-.intro .bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
+.intro .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.intro .scroll-down {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(90deg);
+}
+
+.intro .scroll-down img {
+  rotate: 180deg;
+}
+
+.countdown {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.day,
+.minute,
+.hour,
+.second {
+  font-size: 3rem;
+}
+
+/* Big Navs */
+.bignavs {
+  z-index: 4;
+  margin-top: -5%;
+  background-color: var(--secondary-color);
+  padding: 90px 60px;
+}
+
+.bignavs div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  color: #000;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.bignavs div img {
+  width: 50px;
+}
+
+.bignavs div h2 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.bignavs div:last-child {
+  margin-bottom: 0;
+}
+
+.bignavs div:hover img {
+  transform: translateX(10px); /* Adjust the value based on your preference */
+}
+
+/* To make the transition smooth, add the following */
+.bignavs div img {
+  transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+.journey {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 90px 60px;
+  color: #000;
+}
+
+.journey-img {
+  width: 400px;
+  height: 500px;
+}
+
+.journey-img img {
+  height: 100%;
+}
+
+.journey-text {
+  color: #000;
+  padding: 20px;
+}
+
+.journey-text h2 {
+  color: #000;
+}
+.journey-text p {
+  color: #000;
+}
+
+.journey-text h2 {
+  font-size: 30px;
+}
+
+.testimonial {
+  padding: 90px 0px;
+}
+.testimonial_text {
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial_text h2 {
+  font-size: 40px;
+}
+
+.test-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial_box {
+  width: 400px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.testimonial_box .author {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.testimonial_box .author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.testimonial_box .testimonial_P {
+  margin-top: 20px;
+}
+
+.testimonial_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.testimonial_con {
+  display: flex;
+  gap: 30px;
+  user-select: none;
+  animation: scrollText 20s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.testimonial_row.two {
+  margin-top: 20px;
+}
+
+.testimonial_con.two {
+  animation: scrollTexttwo 20s linear infinite;
+}
+
+@keyframes scrollTexttwo {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.service h1 {
+  font-size: 50px;
 }
