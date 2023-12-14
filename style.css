@@ -6,8 +6,98 @@
   /* font-family: 'Manrope', sans-serif; */
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 3px;
+  border:none;
+}
+
+:root {
+  --secondary-color: #ffd400;
+}
+
+.container {
+  padding: 40px 80px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+  transition: 200ms;
+}
+
+/* Intro Section */
+.intro {
+  margin-top: 10%;
+}
+
+.intro h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.intro-img {
+  width: 50%;
+  height: 500px;
+}
+
+.intro-img img {
+  height: 100%;
+}
+
+.intro-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-text {
+  width: 45%;
+  padding: 10px;
+}
+
+.intro .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
 }
