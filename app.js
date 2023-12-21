@@ -24,3 +24,16 @@ const countdown = () => {
 }
 
 setInterval(countdown, 1000)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const questions = document.querySelectorAll(".question")
+
+  questions.forEach(function (question) {
+    const header = question.querySelector("h3")
+    const answer = question.querySelector(".answer")
+
+    header.addEventListener("click", function () {
+      answer.style.display = answer.style.display === "block" ? "none" : "block"
+    })
+  })
+})
