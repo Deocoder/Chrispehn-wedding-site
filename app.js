@@ -38,13 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 })
 
-// Navbar
-function openNav() {
-  document.getElementById("myNav").style.height = "100%"
-  console.log(document.getElementById("myNav"))
-}
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%"
-}

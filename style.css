@@ -593,3 +593,23 @@ p {
     display: none;
   }
 }
+
+
+/* STORY PAGE */
+
+.text-h1{
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.col-2{
+  width: 48%;
+  color: #fff;
+}
+.col-2 img{
+  height: 500px;
+}
+.p-text{
+  color: #fff;
+  margin-bottom: 20px;
+}
